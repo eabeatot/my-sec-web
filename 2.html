@@ -6,26 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #grid {
-            display: grid;
-            grid-template-columns: 200px 1fr;
-        }
-    </style>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1 style="border-bottom: 1px solid gray; padding: 10px;margin: 0px; padding: 20px;"><a href="index.html">재대HOME</a>
+    <h1><a href="index.html">재대HOME</a>
     </h1>
+    <div style="position:fixed; top: 30px; right: 30px;">
+        <input type="button" value="Dark" onclick="
+            document.querySelector('body').style.backgroundColor = '#222222';
+            document.querySelector('body').style.color = '#eeeeee';
+        " />
+        <input type="button" value="Light" onclick="
+            document.querySelector('body').style.backgroundColor = '#eeeeee';
+            document.querySelector('body').style.color = '#222222';
+        " />
+        </div>
     <div id="grid">
-        <ol style="border-right: 1px solid gray ; width: 100px; margin: 0px; padding: 20px;">
+        <ol>
             <li><a href="1.html">자기소개</a></li>
             <li><a href="2.html">학교소개</a></li>
             <li><a href="3.html">동아리소개</a></li>
         </ol>
         <div>
             <img src="매천고.jpg" style="width: 300px; padding: 20px;">
-            <h1>매천고등학교</h1>
+            <h2>매천고등학교</h2>
             <p><i><b>주소</b></i> : 대구광역시 북구 매천로 70</p>
             <P><i><b>전화</b></i> : 053-231-6700</P>
             <p><i><b>설립</b></i> : 2008년 3월 1일</p>

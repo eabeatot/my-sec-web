@@ -4,42 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>MyWEB</title>
+    <link href="css/main.css" rel="stylesheet">
     <style>
-        #grid {
-            display: grid;
-            grid-template-columns: 200px 1fr;
-        }
-        ol {
-            border-right: 1px solid gray;
-            width: 100px;
-            margin: 0px;
-            padding: 20px;
-        }
-
-        h1 {
-            border-bottom: 1px solid gray;
-            padding: 10px;
-            margin: 0px;
-            padding: 20px;
-
-        }
-        @media(max-width:600px) {
-            #grid {
-                display: block;
-            }
-            ol{
-                border-right:none;
-            }
-            h1{
-                border-bottom:none;
-            }
-        }
     </style>
 </head>
 
 <body>
-    <h1><a href="index.html">재대HOME</a>
-    </h1>
+    <h1><a href="index.html">재대HOME</a></h1>
+    <div style="position:fixed; top: 30px; right: 30px;">
+    <input type="button" value="Dark" onclick="
+        document.querySelector('body').style.backgroundColor = '#222222';
+        document.querySelector('body').style.color = '#eeeeee';
+    " />
+    <input type="button" value="Light" onclick="
+        document.querySelector('body').style.backgroundColor = '#eeeeee';
+        document.querySelector('body').style.color = '#222222';
+    " />
+    </div>
     <div id="grid">
         <ol>
             <li><a href="1.html">자기소개</a></li>
